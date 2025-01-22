@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#title-body{
+    color: rgb(202, 232, 255);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* height: 100vh; */
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* border: solid; */
+    cursor: default;
+    margin-bottom: 5%;
+}
+
+#title-body h1{
+    border-color: white;
+    /* border: solid; */
+    border-right-width: 10px;
+    display: flex;
+    width: 100%;
+    /* height: 40%; */
+    animation-name: cursor-blink, typing-10chars, pulse-white-glow;
+    animation-delay: 0ms, 1s, 5s;
+    animation-duration: 500ms, 1s, 2s;
+    animation-fill-mode: backwards, backwards, forwards;
+    animation-iteration-count: infinite, 2, infinite;
+    animation-direction: alternate, alternate-reverse, alternate;
+    animation-timing-function: linear, step-end, linear;
+    overflow-x: hidden;
+    font-size: 1000%;
+    letter-spacing: 200%;
+    margin: 0;
+}   
+
+
+
+#title-body #title-container{
+    width: fit-content;
+    margin-top: 15%;
+    margin-left: 5%;
+    /* border: solid; */
+}
+
+@keyframes typing-10chars {
+    0%   {width:   0%;}
+    10%  {width:  10%;}
+    20%  {width:  20%;}
+    30%  {width:  30%;}
+    40%  {width:  40%;}
+    50%  {width:  50%;}
+    60%  {width:  60%;}
+    70%  {width:  70%;}
+    80%  {width:  80%;}
+    90%  {width:  90%;}
+    100% {width: 100%;}
+}
+
+@keyframes cursor-blink {
+    0% {border-right-style: none;}
+    100% {border-right-style: solid;}
+}
+
+@keyframes pulse-white-glow {
+    0% {text-shadow: 0 0 5px #ffffff;}
+    33% {text-shadow: 0 0 10px #ffffff;}
+    66% {text-shadow: 0 0 15px #ffffff;}
+    100% {text-shadow: 0 0 20px #ffffff;}
+}
+
+/*
+BELOW THIS IS FOR THE THINGS ON THE HERO PAGE NOT RELATED TO THE 'title'
+*/
+
+#title-body h2{
+    margin: 0;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    /* border: solid; */
+}
+
+#title-body p{
+    margin: 0;
+    font-size: 18px;
+    margin-left: 5%;
+    color: #B0B3b8;
+    /* border: solid; */
+}
+
+#title-body a{
+    margin: 0;
+    font-size: 16px;
+    font-style: italic;
+    /* border: solid; */
+    cursor: pointer;
+    overflow-y: hidden;
+    margin-left: 5%;
+    white-space: nowrap;
+    width: max-content;
+    height: 40px;
+    text-decoration: none;
+    margin-top: 2%;
+
+}
+
+a div{
+    /* border: solid; */
+    width: 100%;
+    color: #B0B3b8;
+    transition: font-size 375ms;
+}
+
+
+
+#title-body a:hover div{
+    font-size: 17px;
+
+    border-bottom: solid;
+    animation-name: underline;
+    animation-delay: 0ms;
+    animation-duration: 250ms;
+    
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    /* border: solid; */
+    /* width: fit-content; */
+
+}
+
+
+@keyframes underline {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+h2 #highlighted{
+    color: rgb(47, 115, 205);
+    text-shadow: 0 0 15px rgb(202, 232, 255);
+}
+
+
+#title-body #button-container{
+    display: flex;
+    flex-direction: row;
+
+    gap: 50px;
+   
+    margin: 1.75% 5%;
+}
+
+#button-container .button{
+    border: solid;
+    cursor: pointer;
+    
+    font-size: 20px;
+    border-width: 2px;
+    margin: 0px;
+    padding: 5px 20px;
+    transition: transform ease-out 250ms, 500ms;
+    border-radius: 5px;
+    color: rgb(202, 232, 255);
+
+    align-content: center;
+}
+
+#button-container .button:hover{
+    transform: rotateY(15deg) rotateX(45deg);
+    color: #01041f;
+    border-color: black;
+    background-color: rgb(202, 232, 255);
+}
+@media (max-width: 768px){
+    #title-body h1{
+        font-size: 350%;
+    }
+    
+    #button-container .button{
+        font-size: 10px;
+    }
+
+    #button-container .button:hover{
+        color: #01041f;
+        border-color: black;
+        background-color: rgb(202, 232, 255);
+    }
+
+    #title-body a{
+        font-size: 12px;
+    }
+
+    #title-body p{
+        font-size: 12px;
+    }
+    #title-body h2{
+        font-size: 16px;
+    }
+    
+}

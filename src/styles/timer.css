@@ -1,0 +1,112 @@
+#main-container{
+    /* border: solid; */
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+#timer-content{
+    display: flex;
+    flex-direction: row;
+    /* border: solid; */
+}
+
+#timer{
+    display: flex;
+    flex-direction: column;
+    /* border: solid; */
+    height: max-content;
+    width: 80%;
+}
+
+
+
+.divisors{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#labeling{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: max-content;
+    /* border: solid; */
+    font-size: 40px;
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #b0b3b88c;
+    
+ 
+
+}
+
+#labeling div{
+    border-left: solid;
+    border-color: #b0b3b88c;
+    width: max-content;
+    padding-left: 20%;
+}
+
+#minutes-timer,#days-timer,#hours-timer,#seconds-timer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-bottom: solid;
+    color: #b0b3b88c;
+    margin-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+.digit-seconds,.digit-minutes,.digit-hours,.digit-days{
+    color: #b0b3b82c;
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+
+
+.highlight{
+    color: white;
+}
+
+#timer-header{
+    color: rgb(177, 208, 232);
+    animation-name: pulse-white-glow-b;
+    animation-delay: 0ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    /* border: solid; */
+}
+
+@keyframes pulse-white-glow-b {
+    0% {text-shadow: 0 0 2.5px #ffffff;}
+    50% {text-shadow: 0 0 5px #ffffff;}
+    100% {text-shadow: 0 0 7.5px #ffffff;}
+}
+
+@media (max-width: 768px) {
+    .digit-seconds,.digit-minutes,.digit-hours,.digit-days{
+        font-size: 10px;
+    }
+
+    #timer-header{
+        font-size: 20px;
+    }
+    #labeling{
+        font-size: 15px;
+    }
+
+}

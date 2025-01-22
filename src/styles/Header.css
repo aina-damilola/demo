@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#header{
+    /* border: solid; */
+    color: red;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background-image: linear-gradient(to bottom right,#01041f8f, #0000008f);
+}
+
+#nsbeLogo,
+#mlhBadge{
+    width: 120px;
+    /* border: solid; */
+    color: white;
+}
+
+#nsbeLogo{
+    height: 120px;
+    margin-top: 1ch;
+    margin-left: 25px;
+}
+
+#mlhBadge{
+    margin-top: 20px;
+    height: 210px;
+    margin-right: 35px;
+}
+
+#header-hyperlinks{
+    /* border: solid; */
+    flex: 1;
+    justify-content: space-around;
+    display: flex;
+
+    padding: 3% 10%;
+}
+
+#header-hyperlinks .header-button{
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    /* border: solid; */
+    transition: 250ms, border-width 500ms;
+    /* border: solid; */
+    height: fit-content;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+
+
+.on-this-page{
+    border-bottom: solid;
+    border-color: rgb(47, 115, 205);
+    border-width: 3px;
+}
+
+#header-hyperlinks .header-button:hover{
+    color: rgb(202, 232, 255);
+    font-style: bold;
+    border-bottom: solid;
+    border-color: rgb(47, 115, 205);
+    border-width: 3px;
+    font-size: 17px;
+}
+
+@media (max-width: 768px){
+    #header-hyperlinks{
+        display: none;
+    }
+    #nsbeLogo{
+        width: 60px;
+        height: 60px;
+    }
+}

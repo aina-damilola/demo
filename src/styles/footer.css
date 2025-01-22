@@ -1,0 +1,72 @@
+#main-container-footer{
+    /* border: solid; */
+    color: red;
+
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+}
+
+#hyperlinks-container-footer{
+    /* border: solid; */
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+
+}
+
+#hyperlinks-container-footer a,
+#hyperlinks-container-footer a img{
+    width: 45px;
+
+    height: 45px;
+    transition: 250ms;
+}
+
+#hyperlinks-container-footer a:hover, 
+#hyperlinks-container-footer a img:hover{
+    width: 40px;
+    /* border:solid;
+    color: yellow; */
+    height: 40px;
+    /* box-shadow: 0 0 15px #ffffff; */
+}
+
+
+#text-footer{
+    /* border: solid; */
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 2.5%;
+    color: rgb(47, 115, 205);
+    animation-name: pulse-white-glow-b;
+    animation-delay: 0ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@media (max-width: 768px) {
+    #text-footer{
+        font-size: 17px;
+    }
+
+    #hyperlinks-container-footer a,
+    #hyperlinks-container-footer a img{
+        width: 20px;
+        height: 20px;
+    }
+
+    #hyperlinks-container-footer a:hover,
+    #hyperlinks-container-footer a img:hover{
+        width: 20px;
+        height: 20px;
+    }
+}

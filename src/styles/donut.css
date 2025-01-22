@@ -1,0 +1,14 @@
+#donut-torus{
+    /* border: solid; */
+    color: yellow;
+    position:fixed;
+    height: 150vh;
+    width: 100vw;
+    color: rgb(202, 232, 255);
+}
+
+@media (max-width: 768px){
+    #donut-torus{
+      display: none;
+    }
+  }

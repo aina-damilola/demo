@@ -1,0 +1,29 @@
+.App{
+  
+  /* border: solid; */
+  color: green;
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+  background-color: #000000;
+  background-image: linear-gradient(to bottom right,#01041f, black);
+  /* width: 100vw; */
+}
+
+#_body{
+  /* height: 200vh; */
+  /* border: solid; */
+  color: red;
+  display: flex;
+  z-index: 3;
+  position: relative;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  #stars-container{
+    display: none;
+  }
+}

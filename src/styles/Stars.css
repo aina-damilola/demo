@@ -1,0 +1,9 @@
+#can{
+    border: solid;
+    color: white;
+}
+
+#stars-canvas{
+    z-index: 1;
+    position: absolute;
+}
