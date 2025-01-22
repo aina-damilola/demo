@@ -10,6 +10,8 @@ import Countdown from './timer';
 import Torus from './Donut';
 import Footer from './footer';
 
+import About from './about';
+
 function App() {
   return (
     <div className="App">
@@ -17,17 +19,20 @@ function App() {
       <Header/>
 
       <div id="stars-container" style={{position:"fixed", width:"100vw", height:"100vh", zIndex: 2}}>
-        <Stars/>
+        {/* <Stars/> */}
       </div>
       
       
       <div id="_body">
         <Title/>
-        <Countdown/>
+        {/* <Countdown/> */}
+
+        <About/>
+
         <Footer/>
       </div>
       
-      <Torus/>
+      {/* <Torus/> */}
       
       
     </div>

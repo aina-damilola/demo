@@ -3,13 +3,14 @@
     color: yellow;
     display: flex;
     flex-direction: column;
-    padding-left: 2.5%;
+    padding-left: 5%;
     padding-right: 2.5%;
 }
 #timer-content{
     display: flex;
     flex-direction: row;
     /* border: solid; */
+    margin-left: 2.5%;
 }
 
 #timer{
@@ -33,7 +34,7 @@
     justify-content: space-around;
     width: max-content;
     /* border: solid; */
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Space Mono", serif;
     font-weight: 700;
     font-style: normal;
@@ -44,10 +45,10 @@
 }
 
 #labeling div{
-    border-left: solid;
+    /* border-left: solid; */
     border-color: #b0b3b88c;
     width: max-content;
-    padding-left: 20%;
+    padding-left: 15%;
 }
 
 #minutes-timer,#days-timer,#hours-timer,#seconds-timer{
@@ -55,9 +56,9 @@
     justify-content: space-evenly;
     flex-direction: column;
     border-bottom: solid;
-    color: #b0b3b88c;
-    margin-top: 1%;
-    padding-bottom: 1%;
+    color: #b0b3b82c;
+    margin-top: 2%;
+    padding-bottom: 1.5%;
 }
 
 
@@ -85,7 +86,7 @@
     animation-direction: alternate;
     animation-timing-function: linear;
     font-family: "Space Mono", serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 40px;
     /* border: solid; */

@@ -10,6 +10,7 @@ body{
   background-color: #000000;
   background-image: linear-gradient(to bottom right,#01041f, black);
   /* width: 100vw; */
+  font-family: "Space Mono", serif;
 }
 
 #_body{

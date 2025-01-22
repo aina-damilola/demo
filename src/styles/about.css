@@ -1,0 +1,12 @@
+#main-container-about{
+    border: solid;
+    color: red;
+}
+
+#main-container-about h1{
+    font-size: 40px;
+    justify-content: center;
+    border: solid;
+    justify-items: center;
+    display: flex;
+}
