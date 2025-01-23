@@ -1,11 +1,47 @@
 import "./styles/about.css"
 
-import { ReactComponent as Empty_Folder} from "./folder-without-files.svg"
-import { ReactComponent as Full_Folder} from "./folder-with-files.svg"
+import { useState } from "react";
+import { ReactComponent as Empty_Folder } from "./folder-without-files.svg";
+import { ReactComponent as Full_Folder } from "./folder-with-files.svg";
 
-function About(){
+import React from "react";
+// function Empty_Folder_rev(){
+//     return()
+// }
+
+function FolderState() {
+  const [fileOpen, setFileOpen] = useState(false); 
+
+  const handleFolderClick = () => {
+    setFileOpen(!fileOpen); // Toggle the file stusat
+
+    var folderVar = document.getElementById("folder");
+    if(fileOpen){
+        folderVar.style.width = '30%';
+        folderVar.style.color = 'yellow';  
+        folderVar.style.marginLeft = '5%';
+        folderVar.style.marginTop = '5%';
+    }
+    else{
+        folderVar.style.width = '50%';
+        folderVar.style.color = 'green';
+        folderVar.style.margin = 'auto'
+    }
+  };
+
+  return (
+    <div id="folder" onClick={handleFolderClick}>
+      {fileOpen ? <Full_Folder /> : <Empty_Folder />}
+    </div>
+  );
+}
+
+function About({section2Ref}){
+    
+    
+
     return(
-        <div id="main-container-about">
+        <div id="main-container-about" ref={section2Ref}>
             <h1>About Us</h1>
 
             <p id="faux-h1">
@@ -19,12 +55,12 @@ function About(){
                     <p id="faux-p">
                         <span className="tag">&lt;<span className="tag-type">p</span>&gt;</span> Hosted by NSBE UofT Chapter, NSBEHacks is the pioneering event of its kind – the first student-run hackathon dedicated to the experiences of Black individuals in technology and engineering. As the largest chapter in Toronto with a global membership of 24,000, NSBE UofT is a dynamic force since its inception in 1999. Beyond academic pursuits, our chapter is committed to activism, community outreach, and leadership within the Black community in technology and engineering spaces.<br/><br/> NSBE Hacks UofT, our flagship initiative, brings together 200 participants annually for a transformative 36-hour experience, aiming to equalize opportunities for Black students in Canada by fostering a space that encourages creativity and innovation. Join us in shaping a more inclusive future where diversity is not just celebrated but actively embraced. <span className="tag"><code>&lt;</code>/<span className="tag-type">p</span>&gt;</span>
                     </p>
-                    {/* <p id="faux-img">
+                    <p id="faux-img">
                         <span className="tag">&lt;<span className="tag-type">img</span></span> src="/folder/logo.png"<span className="tag">&gt;</span>
-                    </p> */}
+                    </p>
                 </div>
                 <div id="subcontainer-about-c">
-                    {/* <div id="folder"></div> */}
+                    <FolderState/>
                 </div>
             </div>
             <div id="quantities">

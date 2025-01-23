@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from "react";
 import "./styles/Stars.css";
 
 const zoom_lvl = 1;
-const num_of_stars = 1000;
+const num_of_stars = 100;
 
 
 
@@ -52,8 +52,8 @@ function Cluster() {
                 Math.random() * y_range - window.innerHeight / (zoom_lvl * 2),
                 0,
             ];
-            const speedx = Math.random() * 4 - 2;
-            const speedy = Math.random() * 4 - 2;
+            const speedx = Math.random() * 2 - 1;
+            const speedy = Math.random() * 2 - 1;
 
             return <Sphere key={position.toString()} position={position} speedx={speedx} speedy={speedy} />;
         });

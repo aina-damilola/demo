@@ -81,18 +81,16 @@
 
 #subcontainer-about-c{
     display:flex;
-    /* border: solid; */
+    border: solid;
     color: red;
     flex: 1;
 }
 
 #subcontainer-about-c #folder{
-    background-image: url('../folder-with-files.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    /* border: solid; */
+    border: solid;
     width: 50%;
-    height: 50%;
+
+    aspect-ratio: 1;
     margin: auto;
     transition: 250ms;
     cursor: pointer;
@@ -100,12 +98,12 @@
 
 #subcontainer-about-c #folder:hover{
     width: 45%;
-    height: 45%;
+  
 }
 
 #subcontainer-about-c #folder:active{
     width: 40%;
-    height: 40%;
+
 }
 
 #quantities{

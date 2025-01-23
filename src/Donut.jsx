@@ -37,7 +37,7 @@ function TorusSkeleton(){
 
     return( 
         <animated.mesh ref={torusRef} position={position} rotation={rotation} scale={scale}>
-            <torusGeometry args = {[30,10,10,24]}/>
+            <torusGeometry args = {[30,8,8,24]}/>
             <meshBasicMaterial wireframe />
         </animated.mesh>
     );

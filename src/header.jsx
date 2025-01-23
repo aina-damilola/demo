@@ -1,7 +1,7 @@
 import "./styles/Header.css"
 
 import nsbeLogo from './nsbe-logo.png';
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 // import nsbeGLogo from './nsbe-logo-general.png';
 
 var current;
@@ -28,12 +28,14 @@ function updatePage(percent){
     }
 }
 
-function Header(){
+
+
+function Header({onScrollToSection}){
     const [percent, setPercent] = useState(0);
     useEffect(() => {
         const scroll_header = () => {
             setPercent(((window.scrollY/window.innerHeight) *100)); 
-            console.log(percent);
+            // console.log(percent);
             updatePage(percent);
         };
 
@@ -49,8 +51,8 @@ function Header(){
         <div id="header">
             <img id="nsbeLogo" src={nsbeLogo} alt="NSBEHacks 2025"/>
             <div id="header-hyperlinks">
-                <div className="header-button on-this-page">Homepage</div>
-                <div className="header-button">About</div>
+                <div onClick={() => onScrollToSection("section1")} className="header-button on-this-page">Homepage</div>
+                <div onClick={() => onScrollToSection("section2")} className="header-button">About</div>
                 {/* <div className="header-button">Team</div> */}
                 {/* <div className="header-button">Sponsors</div> */}
                 {/* <div className="header-button">FAQ</div> */}
