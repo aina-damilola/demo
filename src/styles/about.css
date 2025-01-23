@@ -187,4 +187,11 @@
     #main-container-about h1{
         font-size: 40px;
     }
+
+    #main-container-about #faux-img{
+        font-size: 10px;
+    }
+    #subcontainer-about-c{
+        display: none;
+    }
 }
