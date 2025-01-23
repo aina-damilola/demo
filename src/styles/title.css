@@ -16,10 +16,11 @@
 
 #title-body h1{
     border-color: white;
-    /* border: solid; */
+    border: solid;
     border-right-width: 10px;
     display: flex;
     width: 100%;
+    
     /* height: 40%; */
     animation-name: cursor-blink, typing-10chars, pulse-white-glow;
     animation-delay: 0ms, 1s, 5s;
@@ -30,7 +31,7 @@
     animation-timing-function: linear, step-end, linear;
     overflow-x: hidden;
     font-size: 1000%;
-    letter-spacing: 200%;
+    /* letter-spacing: 200%; */
     margin: 0;
 }   
 
