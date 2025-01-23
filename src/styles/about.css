@@ -81,13 +81,14 @@
 
 #subcontainer-about-c{
     display:flex;
-    border: solid;
-    color: red;
+    /* border: solid; */
+    /* color: red; */
     flex: 1;
+    margin-top: -10%;
 }
 
 #subcontainer-about-c #folder{
-    border: solid;
+    /* border: solid; */
     width: 50%;
 
     aspect-ratio: 1;
@@ -109,6 +110,7 @@
 #quantities{
     display: flex;
     justify-content: space-around;
+    margin-top: 10%;
     /* border: solid; */
 }
 
@@ -137,6 +139,16 @@
     color: #349e63;
     font-weight: 700;
     font-size: 100px;
+}
+
+#logo{
+    position: relative;
+    bottom: 50%;
+    left: 75%;
+    /* border: solid; */
+    width: fit-content;
+    text-align: center;
+    color: #7e8187;
 }
 
 @media (max-width: 768px){

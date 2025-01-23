@@ -5,9 +5,18 @@ import { ReactComponent as Empty_Folder } from "./folder-without-files.svg";
 import { ReactComponent as Full_Folder } from "./folder-with-files.svg";
 
 import React from "react";
-// function Empty_Folder_rev(){
-//     return()
-// }
+function Empty_Folder_rev(){
+    return(
+        <>
+            <Empty_Folder/>
+            <div id="logo">
+                <img src="/nsbe-general-logo.png" width={'100%'}/>
+                NSBE_Logo.png
+            </div>
+            
+        </>
+    )
+}
 
 function FolderState() {
   const [fileOpen, setFileOpen] = useState(false); 
@@ -16,22 +25,24 @@ function FolderState() {
     setFileOpen(!fileOpen); // Toggle the file stusat
 
     var folderVar = document.getElementById("folder");
-    if(fileOpen){
-        folderVar.style.width = '30%';
-        folderVar.style.color = 'yellow';  
+    if(!fileOpen){
+        folderVar.style.width = '40%';
+        // folderVar.style.color = 'yellow';  
         folderVar.style.marginLeft = '5%';
-        folderVar.style.marginTop = '5%';
+        folderVar.style.marginRight = 'auto';
+        folderVar.style.marginTop = '0';
+        
     }
     else{
         folderVar.style.width = '50%';
-        folderVar.style.color = 'green';
+        // folderVar.style.color = 'green';
         folderVar.style.margin = 'auto'
     }
   };
 
   return (
     <div id="folder" onClick={handleFolderClick}>
-      {fileOpen ? <Full_Folder /> : <Empty_Folder />}
+      {fileOpen ? <Empty_Folder_rev /> : <Full_Folder />}
     </div>
   );
 }

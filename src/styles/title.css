@@ -16,7 +16,7 @@
 
 #title-body h1{
     border-color: white;
-    border: solid;
+    /* border: solid; */
     border-right-width: 10px;
     display: flex;
     width: 100%;
