@@ -19,20 +19,20 @@ function App() {
       <Header/>
 
       <div id="stars-container" style={{position:"fixed", width:"100vw", height:"100vh", zIndex: 2}}>
-        {/* <Stars/> */}
+        <Stars/>
       </div>
       
       
       <div id="_body">
         <Title/>
-        {/* <Countdown/> */}
+        <Countdown/>
 
         <About/>
 
         <Footer/>
       </div>
       
-      {/* <Torus/> */}
+      <Torus/>
       
       
     </div>
