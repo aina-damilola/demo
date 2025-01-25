@@ -36,22 +36,22 @@ function FolderState() {
 function Pictures(){
   return(
     <>
-      <div className="team-image"><img loading="eager" src="/headshots/1.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/2.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/3.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/4.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/5.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/6.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/7.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/8.JPEG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/9.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/10.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/11.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/12.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/13.JPEG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/14.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/15.JPG"/></div>
-      <div className="team-image"><img loading="eager" src="/headshots/16.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/1.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/2.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/3.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/4.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/5.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/6.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/7.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/8.jpeg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/9.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/10.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/11.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/12.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/13.jpeg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/14.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/15.jpg"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/16.jpg"/></div>
     </>
   )
 }
