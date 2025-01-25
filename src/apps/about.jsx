@@ -1,16 +1,16 @@
 import "../styles/about.css"
 
 import { useState } from "react";
-import { ReactComponent as Empty_Folder } from "../assets/folder-without-files.svg";
-import { ReactComponent as Full_Folder } from "../assets/folder-with-files.svg";
+import { ReactComponent as EmptyFolder } from "../assets/folder-without-files.svg";
+import { ReactComponent as FullFolder } from "../assets/folder-with-files.svg";
 
 import React from "react";
-function Empty_Folder_rev(){
+function EmptyFolderRev(){
     return(
         <>
-            <Empty_Folder/>
+            <EmptyFolder/>
             <div id="logo">
-                <img src="/nsbe-general-logo.png" width={'100%'}/>
+                <img src="/nsbe-general-logo.png" width={'100%'} alt="NSBE Logo"/>
                 NSBE_Logo.png
             </div>
             
@@ -42,7 +42,7 @@ function FolderState() {
 
   return (
     <div id="folder" onClick={handleFolderClick}>
-      {fileOpen ? <Empty_Folder_rev /> : <Full_Folder />}
+      {fileOpen ? <EmptyFolderRev /> : <FullFolder />}
     </div>
   );
 }

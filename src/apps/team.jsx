@@ -1,7 +1,7 @@
-import "../styles/team.css"
+import "../styles/team.css" 
 
-import { ReactComponent as Empty_Folder } from "../assets/folder-without-files.svg";
-import { ReactComponent as Full_Folder } from "../assets/folder-with-files.svg";
+// import { ReactComponent as Empty_Folder } from "../assets/folder-without-files.svg";
+// import { ReactComponent as Full_Folder } from "../assets/folder-with-files.svg";
 /*
 function FolderState() {
   const [fileOpen, setFileOpen] = useState(false); 
@@ -40,4 +40,4 @@ function Team({section3Ref}){
     )
 }
 
-export default Team;
+export default Team;  

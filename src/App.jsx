@@ -5,6 +5,8 @@ import Title from './apps/title';
 import Countdown from './apps/timer';
 import About from './apps/about';
 import Team from './apps/team';
+import Sponsors from './apps/sponsors';
+import FAQ from './apps/faq';
 import Footer from './apps/footer';
 
 import Stars from './apps/stars';
@@ -19,6 +21,8 @@ function App() {
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
+  const section4Ref = useRef(null);
+  const section5Ref = useRef(null);
 
   const scrollToSection = (section) => {
     if (section === "section1") {
@@ -27,6 +31,10 @@ function App() {
       section2Ref.current.scrollIntoView({ behavior: "smooth" });
     } else if (section === "section3") {
       section3Ref.current.scrollIntoView({ behavior: "smooth" });
+    } else if (section === "section4") {
+      section4Ref.current.scrollIntoView({ behavior: "smooth" });
+    } else if (section === "section5") {
+      section5Ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -46,6 +54,8 @@ function App() {
 
         <About section2Ref={section2Ref} />
         <Team section3Ref={section3Ref} />
+        <Sponsors section4Ref={section4Ref}/>
+        <FAQ section5Ref={section5Ref}/>
         <Footer/>
       </div>
       
