@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "./styles/timer.css"
+import "../styles/timer.css"
 
 function updateCountdown(count, ticker){
     const digits = document.querySelectorAll(ticker);

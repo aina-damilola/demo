@@ -1,8 +1,8 @@
-import "./styles/footer.css"
+import "../styles/footer.css"
 
-import { ReactComponent as MailIcon } from "./mail.svg";
-import { ReactComponent as LinkedinIcon } from "./linkedin.svg";
-import { ReactComponent as InstagramIcon } from "./instagram.svg";
+import { ReactComponent as MailIcon } from "../assets/mail.svg";
+import { ReactComponent as LinkedinIcon } from "../assets/linkedin.svg";
+import { ReactComponent as InstagramIcon } from "../assets/instagram.svg";
 
 function Footer(){
     return(

@@ -1,4 +1,4 @@
-import "./styles/title.css";
+import "../styles/title.css";
 
 import React from "react";
 

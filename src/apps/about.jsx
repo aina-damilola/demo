@@ -1,8 +1,8 @@
-import "./styles/about.css"
+import "../styles/about.css"
 
 import { useState } from "react";
-import { ReactComponent as Empty_Folder } from "./folder-without-files.svg";
-import { ReactComponent as Full_Folder } from "./folder-with-files.svg";
+import { ReactComponent as Empty_Folder } from "../assets/folder-without-files.svg";
+import { ReactComponent as Full_Folder } from "../assets/folder-with-files.svg";
 
 import React from "react";
 function Empty_Folder_rev(){

@@ -1,6 +1,6 @@
-import "./styles/Header.css"
+import "../styles/header.css"
 
-import nsbeLogo from './nsbe-logo.png';
+import nsbeLogo from '../assets/nsbe-logo.png';
 import { useEffect, useRef, useState } from "react";
 // import nsbeGLogo from './nsbe-logo-general.png';
 
@@ -53,7 +53,7 @@ function Header({onScrollToSection}){
             <div id="header-hyperlinks">
                 <div onClick={() => onScrollToSection("section1")} className="header-button on-this-page">Homepage</div>
                 <div onClick={() => onScrollToSection("section2")} className="header-button">About</div>
-                {/* <div className="header-button">Team</div> */}
+                <div onClick={() => onScrollToSection("section3")} className="header-button">Team</div>
                 {/* <div className="header-button">Sponsors</div> */}
                 {/* <div className="header-button">FAQ</div> */}
             </div>

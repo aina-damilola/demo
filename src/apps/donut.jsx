@@ -1,4 +1,4 @@
-import "./styles/donut.css"
+import "../styles/donut.css"
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useEffect, useRef, useState} from "react";
 import { animated, useSpring } from "@react-spring/three";

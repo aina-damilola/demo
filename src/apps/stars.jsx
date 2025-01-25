@@ -1,7 +1,7 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import React, { useState, useEffect, useRef, useMemo } from "react";
 
-import "./styles/Stars.css";
+import "../styles/stars.css";
 
 const zoom_lvl = 1;
 const num_of_stars = 100;

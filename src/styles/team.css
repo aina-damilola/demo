@@ -1,0 +1,27 @@
+#main-container-team{
+    border-color: red;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5%;
+    margin-top: 10%;
+}
+
+#main-container-team h1{
+    font-size: 60px;
+    justify-content: center;
+    /* border: solid; */
+    justify-items: center;
+    display: flex;
+    color: rgb(202, 232, 255);
+    margin: 0;
+    margin-bottom: 2.5%;
+
+    animation-name: pulse-white-glow-b;
+    animation-delay: 0ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
