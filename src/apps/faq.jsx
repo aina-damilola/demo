@@ -54,13 +54,13 @@ function FAQ({section5Ref}){
         <div id="main-container-faq" ref={section5Ref}>
             <h1>FAQs</h1>
             <div id="faqs-container">
-                <Question question="How many people per team?" answer="Each team should have within X-Y people in the team but a concrete list of persons are not needed upon registration."/>
+                {/* <Question question="How many people per team?" answer="Each team should have within X-Y people in the team but a concrete list of persons are not needed upon registration."/> */}
                 
                 <Question question="Is NSBEHacks only for black identifying people?" answer="No, NSBEHacks welcomes everyone from all demographics. We strive for an inclusive environment where inclusion and learning is at the forefront."/>
 
                 <Question question="What is the theme for NSBEHacks 2025?" answer={<>NSBEHacks invites participants to explore the mindful integration, use, and creation of artificial intelligence (AI) to solve pressing challenges. With the theme “AI with Purpose,” we challenge participants to design projects where AI is not just a tool but a transformative force, solving problems that would be otherwise impossible without it. Participants are encouraged to focus on intentional and ethical uses of AI, creating solutions that demonstrate unique value derived from AI technologies.</>}/>
 
-                <Question question="Can I register for NSBEHacks if I'm not in University of Toronto?" answer="Yes! NSBEHacks welcomes everyone from all institutions and skill levels to join in the hackathon."/>
+                <Question question="Can I register for NSBEHacks if I'm not in University of Toronto?" answer="Yes! NSBEHacks welcomes everyone from all institutions and skill levels to join in the hackathon!"/>
             </div>
         </div>
     )

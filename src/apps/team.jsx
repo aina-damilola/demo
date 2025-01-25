@@ -32,12 +32,43 @@ function FolderState() {
   );
 }
 */
+
+function Pictures(){
+  return(
+    <>
+      <div className="team-image"><img loading="eager" src="/headshots/1.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/2.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/3.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/4.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/5.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/6.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/7.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/8.JPEG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/9.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/10.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/11.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/12.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/13.JPEG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/14.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/15.JPG"/></div>
+      <div className="team-image"><img loading="eager" src="/headshots/16.JPG"/></div>
+    </>
+  )
+}
+
 function Team({section3Ref}){
-    return(
-        <div id="main-container-team" ref={section3Ref}>
-            <h1>Meet Our Team</h1>
+  return(
+    <div id="main-container-team" ref={section3Ref}>
+      <h1>Meet Our Team</h1>
+      <div id="scroll-window">
+        <div id="inner-scroll-window">
+          <Pictures/>
+          <Pictures/>
+          <Pictures/>
         </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default Team;  

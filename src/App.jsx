@@ -54,7 +54,7 @@ function App() {
 
         <About section2Ref={section2Ref} />
         <Team section3Ref={section3Ref} />
-        <Sponsors section4Ref={section4Ref}/>
+        {/* <Sponsors section4Ref={section4Ref}/> */}
         <FAQ section5Ref={section5Ref}/>
         <Footer/>
       </div>

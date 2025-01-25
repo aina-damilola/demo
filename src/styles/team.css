@@ -1,6 +1,6 @@
 #main-container-team{
     border-color: red;
-    border: solid;
+    /* border: solid; */
     display: flex;
     flex-direction: column;
     margin-bottom: 2.5%;
@@ -26,8 +26,60 @@
     animation-timing-function: linear;
 }
 
+#scroll-window{
+    overflow-x: hidden;
+    /* border: solid; */
+    color: green;
+}
+
+#inner-scroll-window{
+    display: flex;
+    width: fit-content;
+    /* border: solid; */
+    color: brown;
+    position: relative;
+    animation: move-left 180s linear 0ms infinite forwards;
+}
+
+.team-image{
+    width: 12.5vw;
+    border-radius: 5vw;
+    /* height: 12.5vw; */
+    /* animation: move-left 120s linear 0ms infinite forwards; */
+    right: 0;
+    position: relative;
+    aspect-ratio: 1;
+    /* border: solid; */
+    color: yellow;
+    margin: 0 2.5vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;    /* Vertically center */
+}
+
+.team-image img{
+    opacity: 0.95;
+    width: 100%;
+    /* justify-self: center; */
+    height: auto;           /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+@keyframes move-left{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 700%;
+    }
+}
+
 @media (max-width: 768px){
     #main-container-team h1{
         font-size: 40px;
+    }
+    .team-image{
+        width: 25vw;
     }
 }

@@ -8,7 +8,10 @@ function TorusSkeleton(){
     const [triggered, setTriggered] = useState(false);
     useEffect(() => {
         const scroll = () => {
-            setTriggered(((window.scrollY/window.innerHeight) *100)>0); 
+            let percent = (window.scrollY/window.innerHeight) *100;
+            setTriggered((percent > 0 && percent < 225) || (percent > 275));
+            
+            
         };
 
         window.addEventListener("scroll", scroll);
