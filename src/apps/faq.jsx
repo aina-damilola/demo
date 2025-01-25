@@ -54,7 +54,7 @@ function FAQ({section5Ref}){
         <div id="main-container-faq" ref={section5Ref}>
             <h1>FAQs</h1>
             <div id="faqs-container">
-                {/* <Question question="How many people per team?" answer="Each team should have within X-Y people in the team but a concrete list of persons are not needed upon registration."/> */}
+                <Question question="How many people per team?" answer="Each team should have within 3-4 people in the team but a concrete list of persons are not needed upon registration."/>
                 
                 <Question question="Is NSBEHacks only for black identifying people?" answer="No, NSBEHacks welcomes everyone from all demographics. We strive for an inclusive environment where inclusion and learning is at the forefront."/>
 
