@@ -1,6 +1,6 @@
 #main-container-faq{
-    border-color: red;
-    border: solid;
+    /* border-color: red; */
+    /* border: solid; */
     display: flex;
     flex-direction: column;
     margin-bottom: 2.5%;
@@ -44,7 +44,7 @@
     
     /* background-color: #0c0d1b8f; */
     /* width: 100%; */
-    font-size: 17.5px;
+    
     text-align: center;
     align-content: center;
    
@@ -65,6 +65,7 @@
     transition: 1s;
     font-size: 15px;
     padding: 2.5% 0;
+    text-align: left;
 }
 
 #symbol-faq{
@@ -84,7 +85,25 @@
 #faq-question{
     /* border: solid; */
     /* color: red; */
+    font-size: 17.5px;
     width: 80%;
     text-align: center;
     align-content: center;
+}
+
+@media (max-width: 768px){
+    #main-container-faq h1{
+        font-size: 40px;
+    }
+
+    #faqs-container{
+        grid-template-columns: 75%;
+    }
+
+    #faq-div-b{
+        font-size: 12.5px;
+    }
+    #faq-question{
+        font-size: 12.5px;
+    }
 }

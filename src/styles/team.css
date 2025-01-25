@@ -25,3 +25,9 @@
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+
+@media (max-width: 768px){
+    #main-container-team h1{
+        font-size: 40px;
+    }
+}
