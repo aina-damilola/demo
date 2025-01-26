@@ -49,18 +49,23 @@ AI is  a broad term that we define within the scope of NSBEHacks as a part of on
                 </ul>
 */
 
+// in the team but a concrete list of persons are not needed upon registration.
+
 function FAQ({section5Ref}){
     return(
         <div id="main-container-faq" ref={section5Ref}>
             <h1>FAQs</h1>
             <div id="faqs-container">
-                <Question question="How many people per team?" answer="Each team should have within 3-4 people in the team but a concrete list of persons are not needed upon registration."/>
-                
-                <Question question="Is NSBEHacks only for black identifying people?" answer="No, NSBEHacks welcomes everyone from all demographics. We strive for an inclusive environment where inclusion and learning is at the forefront."/>
 
-                <Question question="What is the theme for NSBEHacks 2025?" answer={<>NSBEHacks invites participants to explore the mindful integration, use, and creation of artificial intelligence (AI) to solve pressing challenges. With the theme “AI with Purpose,” we challenge participants to design projects where AI is not just a tool but a transformative force, solving problems that would be otherwise impossible without it. Participants are encouraged to focus on intentional and ethical uses of AI, creating solutions that demonstrate unique value derived from AI technologies.</>}/>
-
-                <Question question="Can I register for NSBEHacks if I'm not in University of Toronto?" answer="Yes! NSBEHacks welcomes everyone from all institutions and skill levels to join in the hackathon!"/>
+                <Question question={"Where will NSBEHacks be held?"} answer={"NSBEHacks will be held at the University of Toronto's Bahen Centre for Information Technology, located at 40 St George St, Toronto, ON M5S 2E4."}/>
+                <Question question={"What is this year's theme?"} answer={"NSBEHacks invites participants to explore the mindful integration, use, and creation of artificial intelligence (AI) to solve pressing challenges. With the theme “AI with Purpose,” we challenge participants to design projects where AI is not just a tool but a transformative force, solving problems that would be otherwise impossible without it. Participants are encouraged to focus on intentional and ethical uses of AI, creating solutions that demonstrate unique value derived from AI technologies."}/>
+                <Question question={"Will there be prizes?"} answer={"Yes, there will be over $6000 in prizes! Stay tuned for the exciting details as they will be announced closer to the date of the hackathon. "}/>
+                <Question question={"How many people are in a team?"} answer={"Teams will be composed of 3-4 people."}/>
+            
+                <Question question={"Who can participate?"} answer={"The event is open for everybody, regardless of racial identity and educational background."}/>
+                <Question question={"Is there a registration fee?"} answer={"No, there is no registration fee. Additionally, participants will enjoy complimentary food, including snacks, and there will be designated spaces for breaks and naps."}/>
+                <Question question={"What if I don't have a team?"} answer={"No problem at all if you don't have a team yet! We've set up dedicated events and communication servers to help you find like-minded teammates. Feel free to join in, connect with others, and let's make the team-building process a breeze. We're here to ensure everyone has a smooth and enjoyable experience throughout the hackathon."}/>
+                <Question question={"What do I need to bring?"} answer={"Just bring your laptop and charger, and you're good to go! Feel free to bring along anything else that makes you comfortable and ready to hack."}/>
             </div>
         </div>
     )
