@@ -44,7 +44,7 @@ function App() {
       <Header onScrollToSection={scrollToSection}/>
 
       <div id="stars-container" style={{position:"fixed", width:"100vw", height:"100vh", zIndex: 2}}>
-        <Stars/>
+        {/* <Stars/> */}
       </div>
       
       
@@ -54,12 +54,12 @@ function App() {
 
         <About section2Ref={section2Ref} />
         <Team section3Ref={section3Ref} />
-        {/* <Sponsors section4Ref={section4Ref}/> */}
+        <Sponsors section4Ref={section4Ref}/>
         <FAQ section5Ref={section5Ref}/>
         <Footer/>
       </div>
       
-      <Torus/>
+      {/* <Torus/> */}
       
       
     </div>

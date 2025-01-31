@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 2.5%;
-    margin-top: 10%;
+    padding-top: 10%;
 }
 
 #main-container-sponsors h1{

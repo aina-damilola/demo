@@ -63,7 +63,7 @@ function Header({onScrollToSection}){
                 <div onClick={() => onScrollToSection("section1")} className="header-button on-this-page">Homepage</div>
                 <div onClick={() => onScrollToSection("section2")} className="header-button">About</div>
                 <div onClick={() => onScrollToSection("section3")} className="header-button">Team</div>
-                {/* <div onClick={() => onScrollToSection("section4")} className="header-button">Sponsors</div> */}
+                <div onClick={() => onScrollToSection("section4")} className="header-button">Sponsors</div>
                 <div onClick={() => onScrollToSection("section5")} className="header-button">FAQ</div>
             </div>
             {/* <img id="mlhBadge" src={nsbeGLogo}/> */}
