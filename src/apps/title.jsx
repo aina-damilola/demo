@@ -11,7 +11,7 @@ function Title({section1Ref}) {
             <p>February 15th - 16th, <span style={{color:"rgb(47, 115, 205)"}}>2025</span></p>
             <div id="button-container">
                 <a href="https://form.typeform.com/to/y2lRE2Ot" target="_blank" rel="norefferer"className="button">Register</a>
-                {/* <div className="button">Sponsor Us</div> */}
+                <div className="button">Sponsor Us</div>
             </div>
             
             <a href="https://form.typeform.com/to/V9QcvO6O" rel="norefferer" target="_blank"><div>Interested in becoming a volunteer?</div></a>

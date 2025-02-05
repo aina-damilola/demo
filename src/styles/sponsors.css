@@ -48,4 +48,14 @@
     #main-container-sponsors h1{
         font-size: 40px;
     }
+
+    .sponsor-image{
+        /* border: solid;
+        color: white; */
+        height: 15vh;
+        width: auto;
+        margin: 0.5%;
+        
+    }
+    
 }
