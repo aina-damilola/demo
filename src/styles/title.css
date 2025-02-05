@@ -177,9 +177,6 @@ h2 #highlighted{
         font-size: 350%;
     }
     
-    #button-container .button{
-        font-size: 10px;
-    }
 
     #button-container .button:hover{
         color: #01041f;
@@ -198,4 +195,16 @@ h2 #highlighted{
         font-size: 16px;
     }
     
+    #button-container .button{
+
+        font-size: 12.5px;
+        padding: 0px 10px;
+ 
+    }
+
+    #title-body #button-container{
+
+        gap: 15px;
+
+    }
 }
