@@ -59,7 +59,7 @@ function App() {
         <Footer/>
       </div>
       
-      {/* <Torus/> */}
+      <Torus/>
       
       
     </div>

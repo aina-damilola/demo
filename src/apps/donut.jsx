@@ -9,7 +9,7 @@ function TorusSkeleton(){
     useEffect(() => {
         const scroll = () => {
             let percent = (window.scrollY/window.innerHeight) *100;
-            setTriggered((percent > 0 && percent < 225) || (percent > 275));
+            setTriggered((percent > 0 && percent < 225) || (percent > 400));
             
             
         };
@@ -34,7 +34,7 @@ function TorusSkeleton(){
     useFrame(() => {
         if (!torusRef.current)return;
         // torusRef.current.rotation.x += 0.01;
-        torusRef.current.rotation.z -= 0.002;
+        torusRef.current.rotation.z -= 0.0005;
         
     });
 

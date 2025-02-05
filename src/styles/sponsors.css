@@ -1,6 +1,6 @@
 #main-container-sponsors{ 
-    border-color: red;
-    border: solid;
+    /* border-color: red;
+    border: solid; */
     display: flex;
     flex-direction: column;
     margin-bottom: 2.5%;
@@ -24,6 +24,24 @@
     animation-iteration-count:infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
+}
+
+#sponsors-container{
+    /* color: yellow;
+    border: solid; */
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sponsor-image{
+    /* border: solid;
+    color: white; */
+    height: 37.5vh;
+    width: auto;
+    margin: 0.5%;
+    
 }
 
 @media (max-width: 768px){

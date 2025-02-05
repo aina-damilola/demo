@@ -8,7 +8,8 @@ var current;
 
 function updatePage(percent){
     const hyperlinks = document.querySelectorAll('.header-button');
-  
+    
+    
 
     if(percent < 110 && percent >= 0 && !hyperlinks[0].classList.contains('on-this-page')){
         current = 0;
@@ -22,9 +23,13 @@ function updatePage(percent){
         current = 2;
         hyperlinks[2].classList.add('on-this-page');
     }
-    else if(percent >= 300 && !hyperlinks[3].classList.contains('on-this-page')){
+    else if(percent >= 300 && percent < 450 && !hyperlinks[3].classList.contains('on-this-page')){
         current = 3;
         hyperlinks[3].classList.add('on-this-page');
+    }
+    else if(percent >= 450 && !hyperlinks[4].classList.contains('on-this-page')){
+        current = 4;
+        hyperlinks[4].classList.add('on-this-page');
     }
     
     
